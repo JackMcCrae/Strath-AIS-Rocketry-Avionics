@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "AIS IREC 2026 FC-altium-import")(type "KiCad")(uri "${KIPRJMOD}/AIS IREC 2026 FC-altium-import.kicad_sym")(options "")(descr ""))
+)

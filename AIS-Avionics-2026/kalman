@@ -1,0 +1,60 @@
+
+int main()
+{
+	vector<float> measured;
+
+	ifstream file("Simulated and Real Value Comparisson.csv");
+	string line;
+	getline(file, line);
+	stringstream header(line);
+	string column;
+	vector<string> headers;
+	string line;
+	vector<float> realdata;
+	while (getline(header, column, ','))
+		headers.push_back(column);
+	int index;
+	for (size_t i = 0; i < headers.size(); i++)
+	{
+		if (headers[i].find("real altitude") != string::npos)
+			index = i;
+	} 
+	while (getline(file, line))
+	{
+		stringstream ss(line);
+		string value;
+		vector<string> row;
+
+		while (getline(ss, value, ','))
+			row.push_back(value);
+
+		if (row.size() > index)
+		{
+			measured.push_back(stod(row[index]));
+		}
+
+
+
+	float x = measured[0];        // estimated state
+	float q = ;       // noise from the system
+	float r =
+	float p = 1;// estimation uncertainty
+	float k;      // kalman gain
+	vector<float> filtered;
+
+
+	for (size_t i = 0; i < measured.size(); i++) {
+		float z = measured[i];
+		p = p + q;
+		k = p / (p+r);
+		x = x+k * (z-x);
+		p = (1-k) * p;
+
+		filtered.push_back(x);
+	}
+
+
+
+
+}
+
