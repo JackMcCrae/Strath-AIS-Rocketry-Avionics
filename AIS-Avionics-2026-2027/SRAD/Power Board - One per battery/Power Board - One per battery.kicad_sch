@@ -441,7 +441,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+		(property "Footprint" "Reconfigured Standard Components:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical_CAD_Fixed"
 			(at 182.88 99.06 0)
 			(effects
 				(font
@@ -511,7 +511,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+		(property "Footprint" "Reconfigured Standard Components:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical_CAD_Fixed"
 			(at 182.88 88.9 0)
 			(effects
 				(font
